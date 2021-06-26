@@ -210,10 +210,8 @@ h3, legend{
     padding: 12px;
     text-decoration: none;
     font-weight: 800;
-    color: #ffffff;
+    color: #F2A7BB;
     display: inline-block;
-    background-image: linear-gradient(to right, #41CAD9, #F2A7BB, #F2A7BB, #41CAD9);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
 .bttn:hover {
