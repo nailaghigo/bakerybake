@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Paytone+One&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+		<div class="main-nav">
+			<img src="../images/logo.png" alt="logo" width="3.5%">
+
+			<nav class="main-nav__list">
+				<ul class="main-nav__item">
+					<li class="main-nav__link"><a href="../index.html">NOSOTROS</a></li>
+					<li class="main-nav__link"><a href="./productos.html">PRODUCTOS</a></li>
+					<li class="main-nav__link"><a href="./servicios.html">SERVICIOS</a></li>
+					<li class="main-nav__link"><a href="./promos.html">PROMOS</a></li>
+					<li class="main-nav__link"><a href="./contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    
+    <section id="contacto" class="cntGeneral">
+		
+		<h2 class="title">Contactanos</h2>
+
+		<p>email@bakerybake.com</p>
+		<p>+54 0341 153267065</p>
+		<p>267 Happy Street, Buenos Aires,Argentina</p>
+
+
+		<h3>Nuestros Horarios</h3>
+		<p>Lunes - Viernes: 9AM - 8PM</p>
+		<p>Sabados: 10AM - 7PM</p>
+		<p>Domingos: 10AM - 12PM</p>
+
+		<h3>Seguinos</h3>
+		<!-- iconos de redes con fontawesome -->
+
+		<h3>Medios de Pago</h3>
+		<!-- iconos con fontawesome -->
+
+        <br>
+        <br>
+        <br>
+        <form action="enviar.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="legend">Envia Tu Consulta</legend>
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" name="nombreyapellido" maxlength="100"/>	
+
+                <br>
+                <br>    
+
+                <label for="email">Email</label>
+                <input type="text" name="email" maxlength="100"/>
+                
+                <br>
+                <br>
+                <label for="info">Quiero saber mas sobre:</label>
+                <select name="info">
+                    <option value="-">-</option>
+                    <option value="productos">Productos</option>
+                    <option value="servicios-especiales">Servicios Especiales</option>
+                    <option value="Otros">Otros</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label for="comment">Dejanos tu comentario</label>
+                <textarea name="comment"></textarea>
+                
+                <br>
+                <br>
+    
+                <input type="checkbox" name="autorindependiente" value="1">
+                <span>Quiero recibir mas informacion</span>
+            
+    
+                <br>
+                <br>
+                <input type="reset" name="reset" value="Limpiar">
+                <input type="submit" name="submit" value="Enviar">
+    
+            </fieldset>
+	</section>
+    
+
+    <footer>
+		<span>© 2021— My Bakery Bake Page</span>
+
+		<!-- iconos de redes sociales -->
+	</footer>
+</body>
+</html>
