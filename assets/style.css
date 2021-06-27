@@ -70,12 +70,34 @@ h3, legend{
 /* barra de navegacion */
 
 .main-nav {
-    background-color: linear-gradient(#514C57, #514C57, .50);
+    background-color: rgba(81, 76, 87, 0.60);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     padding: 0 90px;
+}
+
+.main-nav__logo {
+    width: 10%;
+}
+
+.main-nav__logo:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-3deg); }
+    20% { transform: rotate(2deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-2deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-3deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .main-nav__item {
@@ -85,21 +107,38 @@ h3, legend{
     align-items: center;
 }
 
+.main-nav__link {
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+
 .main-nav__link a{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 18px;
     color: #F7FFF4;
-    justify-content: space-between;
-    padding: 14px 16px;
+}
+
+.main-nav__link a:hover {
+    color: #F2A7BB;
+    transition: color ease-in-out .15s;
+}
+
+.main-nav__link a:hover.selected {
+    border-bottom-color: #F2A7BB;
+    transition: color ease-in-out .15s;
+}
+
+.main-nav__link a.selected {
+    border-bottom: 2px solid #F7FFF4;
 }
 
 .cntFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin: 25px 80px;
 }
 
@@ -112,7 +151,6 @@ h3, legend{
     font-size: 25px;
     width: 200px;
 }
-
 
 /* Seccion Home */
 .cntHome {
@@ -155,11 +193,14 @@ h3, legend{
     text-align: center;
 }
 
-/* Seccion Nosotros */
-.bgNosotros {
+.bg-pattern {
     background-image: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,.93)), 
     url(../images/pattern.jpg);
     background-repeat: repeat;
+}
+
+/* Seccion Nosotros */
+.bgNosotros {
     display: inline-flex;
     height: auto;
     padding: 50px 120px;
@@ -200,7 +241,6 @@ h3, legend{
 .cnt-bttn {
     width: auto;
     cursor: pointer;
-
 }
 
 .bttn {
@@ -282,12 +322,10 @@ h3, legend{
 
 .imgItem1 {
     background-image: url('../images/tortas.jpg');
-    
 }
 
 .gridItem2{
     grid-area: gridItem2;
-
 }
 
 .imgItem2 {
@@ -296,7 +334,6 @@ h3, legend{
 
 .gridItem3 {
     grid-area: gridItem3;
-
 }
 
 .imgItem3 {
@@ -445,6 +482,7 @@ h3, legend{
     justify-content: center;
     align-items: center;
 }
+
 .boxDescription {
     align-content: center;
     display: flex;
