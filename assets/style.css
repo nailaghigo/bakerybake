@@ -33,6 +33,7 @@ header {
     left: 0;
     width: 100%;
     height: 80px;
+    z-index: 1;
 }
 
 h1 {
@@ -53,10 +54,9 @@ h1 span {
     display: inline-block;
 }
 
-
 h2 {
     color: #41CAD9;
-    font-size: 80px;
+    font-size: 80px !important;
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
 }
@@ -366,58 +366,56 @@ h3, legend{
 
 /* Seccion Servicios */
 
-.list {
-    padding-left: 30px;
-    text-align: left;
-    list-style: square;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
-.listAlt {
-    list-style-position: inside;
+.card:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.1s;
 }
 
-.table {
-    border-collapse: collapse;
+.bakeryCardTitle {
+    color: #A62E44;
+    font-weight: 700;
 }
 
-.table-tr:hover td {
-    background-color: #dedede;
+.bakeryCardText {
+    font-size: 14px;
+    color: #514C57;
 }
 
-.table-th {
-    border-left: 4px solid #ffffff;
-    border-right: 4px solid #ffffff;
-    text-align: center;
-    background-color: #F2A7BB;
-    color: #F7FFF4;
-    font-family: 'Paytone One', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+.imgBox {
+    background-size: cover;
+    height: 280px;
 }
 
-.table-th:first-child {
-    border-top-left-radius: 8px;
-    border-left: none;
+.box1 {
+    background-image: url(../images/tortaTematica.jpg);
 }
 
-.table-th:last-child {
-    border-top-right-radius: 8px;
-    border-right: none;
+.box2 {
+    background-image: url(../images/mesaDulce.jpg);
 }
 
-.table-td {
-    background-color: #ededed;
-    border: 4px solid #ffffff;
-    padding: 20px;
-    font-size: 16px;
+.box3 {
+    background-image: url(../images/box.jpg);
 }
 
-.table-td:first-child {
-    border-left: none;
+.box4 {
+    background-image: url(../images/cookies.jpg);
 }
 
-.table-td:last-child {
-    border-right: none;
+.box5 {
+    background-image: url(../images/numberCake.jpg);
+}
+
+.box6 {
+    background-image: url(../images/candyBar.png);
 }
 
 /* Seccion Promos */
