@@ -154,14 +154,35 @@ h3, legend{
 
 /* Seccion Home */
 .cntHome {
-    background-image: url(../images/swiper_3.jpg);
-    background-size: cover;
+    /* background-image: url(../images/swiper_3.jpg);
+    background-size: cover; */
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.carouselItem {
+    height: 100vh;
+}
+
+.carouselItem1 {
+    background-image: url(../images/swiper_3.jpg);
+}
+
+.carouselItem2 {
+    background-image: url(../images/swiper_2.png);
+    background-size: cover;
+}
+
+.carouselItem3 {
+    background-image: url(../images/swiper_1.jpg);
 }
 
 .cntHome__box {
+    position: absolute;
+    top: 35%;
+    left: 25%;
     align-self: center;
 }
 
