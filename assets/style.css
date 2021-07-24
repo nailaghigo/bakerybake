@@ -162,6 +162,10 @@ h3, legend{
     /* display: flex;
     justify-content: center; */
 }
+.cntHome .carousel-control-prev, .cntHome .carousel-control-next {
+    height: 30px;
+    top: 50%;
+}
 
 .carouselItem {
     height: 100vh;
