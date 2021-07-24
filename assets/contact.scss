@@ -1,0 +1,159 @@
+/* Seccion Contacto */
+
+.cntContacto {
+    padding-top: 250px;
+    background-image: url(../images/contactBg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contactCard {
+    min-width: 800px;
+    background-color: white;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.contactCard__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.contactCard__section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.contactCard__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.contactCard__icon {
+    height: 40px;
+    width: 40px;
+    fill: #514c57d3;
+}
+
+.contactCard__icon:hover {
+    fill: #F2A7BB;
+    transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
+}
+
+.contactCard__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactCard__iconTitle {
+    font-size: 25px;
+}
+
+.contactCard__detail {
+    color: #514c579a;
+    font-size: 18px;
+}
+
+.contactCard__contacts{
+    font-size: 25px;
+}
+
+.contactCard__Smedia {
+    display: flex;
+}
+
+.contactCard__Smedia .contactCard__SMicon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px dashed gray;
+    background-clip: content-box;
+    padding: 4px;
+    transition: .5s;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.contactCard__Smedia .contactCard__SMicon:hover {
+    padding: 6px;
+    transform: rotate(360deg);
+}
+
+.contactCard__Smedia .contactCard__SMicon svg {
+    fill: #ffffff;
+    width: 18px;
+}
+
+.contactCard__Smedia .contactCard__SMicon.whatsapp {
+    background: #00e676;
+    background-clip: content-box;
+}
+
+.contactCard__Smedia .contactCard__SMicon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 05%, #fd5949 60%,#d6249f 90%);
+    background-clip: content-box;
+}
+
+.contactCard__Smedia .contactCard__SMicon.twitter {
+    background-color: #00ACEE;
+}
+
+.contactCard__Smedia .contactCard__SMicon.facebook {
+    background-color: #3B5998;
+}
+  
+
+/* Formulario de contacto */
+
+.formCnt {
+    padding: 50px 450px;
+
+}
+
+.formCnt__card {
+    padding: 30px;
+}
+
+.formCnt__card .row {
+    padding-bottom: 10px;
+}
+
+.formCnt__card .form-control,
+.formCnt__card .form-check-input {
+    transition: border-color cubic-bezier(0.755, 0.05, 0.855, 0.06) .25s;
+}
+
+.formCnt__card .form-control:focus,
+.formCnt__card .form-check-input:focus {
+    border-color: #F2A7BB;
+    box-shadow: none;
+}
+  
+.formCnt__card .form-check-input:checked {
+    background-color: #F2A7BB;
+    border-color: #F2A7BB;
+}
+  
+.formCnt__card .btn-primary {
+    background-color: #F2A7BB;
+    border-color: #F2A7BB;
+}
+
+.formCnt__card .btn-primary:focus {
+    box-shadow: none;
+}
+
+.formCnt__card .btn-primary:active {
+    background-color: #f2a7bbbe;
+}

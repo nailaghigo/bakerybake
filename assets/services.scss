@@ -1,0 +1,53 @@
+/* Seccion Servicios */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out 0.1s;
+}
+
+.bakeryCardTitle {
+    color: #A62E44;
+    font-weight: 700;
+}
+
+.bakeryCardText {
+    font-size: 14px;
+    color: #514C57;
+}
+
+.imgBox {
+    background-size: cover;
+    height: 280px;
+}
+
+.box1 {
+    background-image: url(../images/tortaTematica.jpg);
+}
+
+.box2 {
+    background-image: url(../images/mesaDulce.jpg);
+}
+
+.box3 {
+    background-image: url(../images/box.jpg);
+}
+
+.box4 {
+    background-image: url(../images/cookies.jpg);
+}
+
+.box5 {
+    background-image: url(../images/numberCake.jpg);
+}
+
+.box6 {
+    background-image: url(../images/candyBar.png);
+}

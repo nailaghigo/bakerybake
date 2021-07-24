@@ -1,0 +1,102 @@
+/* Seccion Productos */
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "gridItem1 gridItem1 gridItem2"
+    "gridItem3 gridItem4 gridItem5"
+    "gridItem3 gridItem6 gridItem6";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    width: 100%;
+}
+
+.gridItem {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.imgItem {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgItem:hover {
+    transform: scale(1.02);
+    transition: all ease .35s;
+}
+
+.imgItem:hover:after {
+    background: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .75));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.itemName {
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    padding: 20px 35px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.gridItem1 {
+    grid-area: gridItem1;
+}
+
+.imgItem1 {
+    background-image: url('../images/tortas.jpg');
+}
+
+.gridItem2{
+    grid-area: gridItem2;
+}
+
+.imgItem2 {
+    background-image: url('../images/macaron.jpg');
+}
+
+.gridItem3 {
+    grid-area: gridItem3;
+}
+
+.imgItem3 {
+    background-image: url('../images/cupcakesProd.jpg');
+}
+
+.gridItem4 {
+    grid-area: gridItem4;
+}
+
+.imgItem4 {
+    background-image: url('../images/tarta.jpg');
+}
+
+.gridItem5 {
+    grid-area: gridItem5;
+}
+
+.imgItem5 {
+    background-image: url('../images/donut.jpg');
+}
+
+.gridItem6 {
+    grid-area: gridItem6;
+}
+
+.imgItem6 {
+    background-image: url('../images/cakepops.jpg');
+}
