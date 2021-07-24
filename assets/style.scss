@@ -1,0 +1,51 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './fonts.scss';
+@import './header.scss';
+@import './home.scss';
+@import './products.scss';
+@import './services.scss';
+@import './offers.scss';
+@import './contact.scss';
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+h1 {
+    color: #41CAD9;
+    font-size: 9em;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(28, 91, 133, 0.719);
+}
+
+h1 span {
+    color:  #FFFF9C;
+    font-family: 'Mr De Haviland', cursive;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 30px rgba(204, 221, 106, 0.938);
+    display: inline-block;
+}
+
+h2 {
+    color: #41CAD9;
+    font-size: 80px !important;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+}
+
+h3, legend{
+    color: #514C57;
+    font-size: 26px;
+    font-family: 'Paytone One', sans-serif;
+}
+
