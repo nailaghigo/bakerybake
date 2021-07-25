@@ -1,3 +1,5 @@
+@import url(./variables.scss);
+
 /* Seccion Home */
 .cntHome {
     /* background-image: url(../images/swiper_3.jpg);
@@ -58,7 +60,7 @@
 .textItalic {
     font-style: italic;
     font-weight: bold;
-    color: #dedede;
+    color: $colorBeige;
     font-size: 2em;
     text-shadow: 2px 2px 10px rgba(27, 16, 31, 0.856);
     text-align: center;

@@ -1,7 +1,9 @@
 
+@import './variables.scss';
+
 * {
     box-sizing: border-box;
-    color: #514C57;
+    color: $colorGray;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     outline: 0;
@@ -9,5 +11,5 @@
 }
 
 body {
-    background-color: #F7FFF4;
+    background-color: $colorWhite;
 }

@@ -1,3 +1,19 @@
+/* 
+ Paleta de colores:
+    Rojo: #A62E44;
+    Gris: #514C57;
+    gris claro: #514c579a;
+    Rosa: #F2A7BB;
+    Celeste: #41CAD9;
+    Amarillo: #FFFF9C
+    Blanco: #F7FFF4;
+*/
+@import url(./variables.scss);
+@import url(./variables.scss);
+@import url(./variables.scss);
+@import url(./variables.scss);
+@import url(./variables.scss);
+@import url(./variables.scss);
 * {
   box-sizing: border-box;
   color: #514C57;
@@ -28,7 +44,7 @@ font-family: 'Open Sans', sans-serif;
  */
 /* barra de navegacion */
 .main-nav {
-  background-color: rgba(81, 76, 87, 0.6);
+  background-color: #514c5799;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -277,7 +293,7 @@ font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
 .prodGrid__item {
-  background-color: #000000;
+  background-color: #00000020;
   margin: 0;
   padding: 0;
   min-height: 550px;
@@ -473,9 +489,9 @@ font-family: 'Open Sans', sans-serif;
 
 .contactCard {
   min-width: 800px;
-  background-color: white;
+  background-color: #dedede;
   border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #00000020;
 }
 .contactCard__title {
   display: flex;
@@ -529,7 +545,7 @@ font-family: 'Open Sans', sans-serif;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px dashed gray;
+  border: 1px dashed #514C57;
   background-clip: content-box;
   padding: 4px;
   transition: 0.5s;

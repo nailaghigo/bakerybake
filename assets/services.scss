@@ -1,3 +1,4 @@
+@import url(./variables.scss);
 /* Seccion Servicios */
 
 .cards {
@@ -14,13 +15,13 @@
 }
 
 .bakeryCardTitle {
-    color: #A62E44;
+    color: $colorRed;
     font-weight: 700;
 }
 
 .bakeryCardText {
     font-size: 14px;
-    color: #514C57;
+    color: $colorGray;
 }
 
 .imgBox {

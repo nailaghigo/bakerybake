@@ -1,7 +1,9 @@
+@import url(./variables.scss);
+
 /* barra de navegacion */
 
 .main-nav {
-    background-color: rgba(81, 76, 87, 0.60);
+    background-color: $colorGrayTransparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,21 +50,21 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #F7FFF4;
+    color: $colorWhite;
 }
 
 .main-nav__link a:hover {
-    color: #F2A7BB;
+    color: $colorPink;
     transition: color ease-in-out .15s;
 }
 
 .main-nav__link a:hover.selected {
-    border-bottom-color: #F2A7BB;
+    border-bottom-color: $colorPink;
     transition: color ease-in-out .15s;
 }
 
 .main-nav__link a.selected {
-    border-bottom: 2px solid #F7FFF4;
+    border-bottom: 2px solid $colorWhite;
 }
 
 .cntFooter {
