@@ -8,7 +8,6 @@
 @import './offers.scss';
 @import './contact.scss';
 
-
 header {
     position: fixed;
     top: 0;
@@ -19,7 +18,7 @@ header {
 }
 
 h1 {
-    color: #41CAD9;
+    color:$colorBlueLight;
     font-size: 9em;
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
@@ -28,7 +27,7 @@ h1 {
 }
 
 h1 span {
-    color:  #FFFF9C;
+    color:  $colorYellow;
     font-family: 'Mr De Haviland', cursive;
     font-weight: 400;
     font-size: 1.2em;
@@ -37,14 +36,14 @@ h1 span {
 }
 
 h2 {
-    color: #41CAD9;
+    color: $colorBlueLight;
     font-size: 80px !important;
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
 }
 
 h3, legend{
-    color: #514C57;
+    color: $colorGray;
     font-size: 26px;
     font-family: 'Paytone One', sans-serif;
 }

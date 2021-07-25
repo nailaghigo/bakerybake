@@ -1,4 +1,8 @@
+@import url(./variables.scss);
+
+$medidaMain: 300px;
 /* Seccion Promos */
+
 .offers {
     display: flex;
     flex-direction: column;
@@ -23,16 +27,16 @@
                 border-radius: 5%;
                 display: flex;
                 width: 100%;
-                height: 330px;
+                height: $medidaMain +30px;
                 background-position: center;
                 background-size: cover;
             }
             
             &__title {
                 width: 100%;
-                background-color: #A62E44;
+                background-color:$colorRed;
                 height: 45px;    
-                color: #dedede;
+                color: $colorBeige;
                 font-size: 20px;
                 font-weight: bold;
                 margin-top: 250px;
@@ -49,7 +53,7 @@
                 text-align: center;
                 
                 &:hover {
-                    color: #F2A7BB;
+                    color: $colorPink;
                 }
             }
             

@@ -1,3 +1,4 @@
+@import url(./variables.scss);
 /* Seccion Contacto */
 
 .cntContacto {
@@ -9,9 +10,9 @@
 
 .contactCard {
     min-width: 800px;
-    background-color: white;
+    background-color: $colorBeige;
     border-radius: .25rem;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid $colorBlack;
 
     &__title {
         display: flex;
@@ -39,14 +40,13 @@
     &__icon {
         height: 40px;
         width: 40px;
-        fill: #514c57d3;
+        fill: $colorGray2;
         
         &:hover {
-            fill: #F2A7BB;
+            fill: $colorPink;
             transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
         }
     }
-    
     
     &__info {
         display: flex;
@@ -59,7 +59,7 @@
     }
     
     &__detail {
-        color: #514c579a;
+        color: $colorGrayLight;
         font-size: 18px;
     }
     
@@ -75,7 +75,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            border: 1px dashed gray;
+            border: 1px dashed $colorGray;
             background-clip: content-box;
             padding: 4px;
             transition: .5s;
@@ -89,12 +89,12 @@
             }
 
             & svg {
-                fill: #ffffff;
+                fill: $colorWhitePure;
                 width: 18px;
             }
 
             &.whatsapp {
-                background: #00e676;
+                background: $colorWhatsApp;
                 background-clip: content-box;
             }
             
@@ -104,11 +104,11 @@
             }
             
             &.twitter {
-                background-color: #00ACEE;
+                background-color: $colorTwitter;
             }
             
             &.facebook {
-                background-color: #3B5998;
+                background-color: $colorFacebook;
             }
         }
     } 
@@ -133,24 +133,24 @@
             transition: border-color cubic-bezier(0.755, 0.05, 0.855, 0.06) .25s;
             
             &:focus {
-                border-color: #F2A7BB;
+                border-color: $colorPink;
                 box-shadow: none;
             }
         }
         & .form-check-input:checked {
-            background-color: #F2A7BB;
-            border-color: #F2A7BB;
+            background-color: $colorPink;
+            border-color: $colorPink;
         }
         & .btn-primary {
-            background-color: #F2A7BB;
-            border-color: #F2A7BB;
+            background-color: $colorPink;
+            border-color: $colorPink;
 
             &:focus {
                 box-shadow: none;
             }
             
             &:active {
-                background-color: #f2a7bbbe;
+                background-color: $colorPinkLight;
             }
         }
         
