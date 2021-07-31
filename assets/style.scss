@@ -48,3 +48,41 @@ h3, legend{
     font-family: 'Paytone One', sans-serif;
 }
 
+.cntGeneral {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.title {
+    margin: 80px 0;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.textAlt {
+    line-height: 40px;
+}
+
+.textItalic {
+    font-style: italic;
+    font-weight: bold;
+    color: $colorBeige;
+    font-size: 2em;
+    text-shadow: 2px 2px 10px rgba(27, 16, 31, 0.856);
+    text-align: center;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.bg-pattern {
+    background-image: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,.93)), 
+    url(../images/pattern.jpg);
+    background-repeat: repeat;
+}
+
