@@ -51,15 +51,12 @@ font-family: 'Open Sans', sans-serif;
   height: 80px;
   padding: 0 90px;
 }
-
 .main-nav__logo {
-  width: 10%;
+  width: 50px;
 }
-
 .main-nav__logo:hover {
   animation: shake 0.5s;
 }
-
 @keyframes shake {
   0% {
     transform: rotate(0deg);
@@ -100,13 +97,12 @@ font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
-
 .main-nav__link {
   justify-content: space-between;
   padding: 14px 16px;
 }
-
 .main-nav__link a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
@@ -114,17 +110,14 @@ font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #F7FFF4;
 }
-
 .main-nav__link a:hover {
   color: #F2A7BB;
   transition: color ease-in-out 0.15s;
 }
-
 .main-nav__link a:hover.selected {
   border-bottom-color: #F2A7BB;
   transition: color ease-in-out 0.15s;
 }
-
 .main-nav__link a.selected {
   border-bottom: 2px solid #F7FFF4;
 }
@@ -136,8 +129,7 @@ font-family: 'Open Sans', sans-serif;
   align-items: center;
   margin: 25px 80px;
 }
-
-.socialMedia {
+.cntFooter .socialMedia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,36 +141,27 @@ font-family: 'Open Sans', sans-serif;
 
 /* Seccion Home */
 .cntHome {
-  /* background-image: url(../images/swiper_3.jpg);
-  background-size: cover; */
   height: 100vh;
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
+  justify-content: center;
 }
-
 .cntHome .carousel-control-prev, .cntHome .carousel-control-next {
   height: 30px;
   top: 50%;
 }
-
-.carouselItem {
+.cntHome .carouselItem {
   height: 100vh;
 }
-
-.carouselItem1 {
+.cntHome .carouselItem.carouselItem1 {
   background-image: url(../images/swiper_3.jpg);
 }
-
-.carouselItem2 {
+.cntHome .carouselItem.carouselItem2 {
   background-image: url(../images/swiper_2.png);
   background-size: cover;
 }
-
-.carouselItem3 {
+.cntHome .carouselItem.carouselItem3 {
   background-image: url(../images/swiper_1.jpg);
 }
-
 .cntHome__box {
   position: absolute;
   top: 35%;
@@ -186,102 +169,53 @@ font-family: 'Open Sans', sans-serif;
   align-self: center;
 }
 
-.cntGeneral {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
-}
-
-.title {
-  margin: 80px 0;
-}
-
-.text {
-  font-size: 25px;
-}
-
-.textAlt {
-  line-height: 40px;
-}
-
-.textItalic {
-  font-style: italic;
-  font-weight: bold;
-  color: #dedede;
-  font-size: 2em;
-  text-shadow: 2px 2px 10px rgba(27, 16, 31, 0.856);
-  text-align: center;
-}
-
-.textBold {
-  font-weight: bold;
-}
-
-.bg-pattern {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(../images/pattern.jpg);
-  background-repeat: repeat;
-}
-
 /* Seccion Nosotros */
 .bgNosotros {
-  display: inline-flex;
-  height: auto;
-  padding: 50px 120px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  padding: 100px;
+  justify-content: space-between;
 }
-
-.cntImg {
-  display: flex;
-  justify-content: left;
-  width: 50%;
-  gap: 20px;
+.bgNosotros__cntNosotros {
+  width: 48%;
 }
-
-.img {
-  min-height: 200px;
-  min-width: 150px;
-  max-height: 400px;
-  max-width: 50%;
-}
-
-.img2 {
-  margin-top: 200px;
-}
-
-.cntNosotros {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.cntNosotros-description {
+.bgNosotros__cntNosotros-description {
   display: flex;
   flex-wrap: wrap;
 }
-
-.cnt-bttn {
-  width: auto;
+.bgNosotros__cntNosotros .cnt-bttn {
+  width: 255px;
+  height: 56px;
   cursor: pointer;
-}
-
-.bttn {
-  border: 4px solid #41CAD9;
-  background-size: 300% 100%;
   margin-top: 20px;
+  background-color: #ffffff;
+}
+.bgNosotros__cntNosotros .bttn {
+  border: 4px solid #41CAD9;
+  border-radius: 4px;
   padding: 12px;
   text-decoration: none;
   font-weight: 800;
   color: #F2A7BB;
   display: inline-block;
 }
-
-.bttn:hover {
+.bgNosotros__cntNosotros .bttn:hover {
   background-position: 100% 0;
   transition: all 0.4s ease-in-out;
   color: #514C57;
+}
+.bgNosotros__cntImg {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  justify-content: space-evenly;
+}
+.bgNosotros__cntImg .item {
+  max-height: 400px;
+}
+.bgNosotros__cntImg .item--alt {
+  margin-top: 200px;
 }
 
 /* Seccion Productos */
@@ -305,6 +239,7 @@ font-family: 'Open Sans', sans-serif;
   padding: 20px 35px;
   font-size: 40px;
   font-weight: bold;
+  z-index: 1;
 }
 .prodGrid__img {
   height: 100%;
@@ -481,7 +416,7 @@ font-family: 'Open Sans', sans-serif;
 
 /* Seccion Contacto */
 .cntContacto {
-  padding-top: 250px;
+  padding-top: 250px !important;
   background-image: url(../images/contactBg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -489,7 +424,7 @@ font-family: 'Open Sans', sans-serif;
 
 .contactCard {
   min-width: 800px;
-  background-color: #dedede;
+  background-color: #ffffff;
   border-radius: 0.25rem;
   border: 1px solid #00000020;
 }
@@ -545,7 +480,7 @@ font-family: 'Open Sans', sans-serif;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px dashed #514C57;
+  border: 1px dashed #514c579a;
   background-clip: content-box;
   padding: 4px;
   transition: 0.5s;
@@ -578,10 +513,13 @@ font-family: 'Open Sans', sans-serif;
 
 /* Formulario de contacto */
 .formCnt {
-  padding: 50px 450px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .formCnt__card {
   padding: 30px;
+  width: 1000px;
 }
 .formCnt__card .row {
   padding-bottom: 10px;
@@ -646,6 +584,43 @@ h3, legend {
   color: #514C57;
   font-size: 26px;
   font-family: "Paytone One", sans-serif;
+}
+
+.cntGeneral {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.title {
+  margin: 80px 0;
+}
+
+.text {
+  font-size: 25px;
+}
+
+.textAlt {
+  line-height: 40px;
+}
+
+.textItalic {
+  font-style: italic;
+  font-weight: bold;
+  color: #dedede;
+  font-size: 2em;
+  text-shadow: 2px 2px 10px rgba(27, 16, 31, 0.856);
+  text-align: center;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.bg-pattern {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(../images/pattern.jpg);
+  background-repeat: repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

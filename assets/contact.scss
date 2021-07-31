@@ -2,7 +2,7 @@
 /* Seccion Contacto */
 
 .cntContacto {
-    padding-top: 250px;
+    padding-top: 250px !important;
     background-image: url(../images/contactBg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -10,7 +10,7 @@
 
 .contactCard {
     min-width: 800px;
-    background-color: $colorBeige;
+    background-color: $colorWhitePure;
     border-radius: .25rem;
     border: 1px solid $colorBlack;
 
@@ -75,7 +75,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            border: 1px dashed $colorGray;
+            border: 1px dashed $colorGrayLight;
             background-clip: content-box;
             padding: 4px;
             transition: .5s;
@@ -119,10 +119,13 @@
 /* Formulario de contacto */
 
 .formCnt {
-    padding: 50px 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 
     &__card {
         padding: 30px;
+        width: 1000px;
 
         & .row {
             padding-bottom: 10px;

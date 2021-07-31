@@ -2,138 +2,99 @@
 
 /* Seccion Home */
 .cntHome {
-    /* background-image: url(../images/swiper_3.jpg);
-    background-size: cover; */
     height: 100vh;
     width: 100%;
-    /* display: flex;
-    justify-content: center; */
-}
-.cntHome .carousel-control-prev, .cntHome .carousel-control-next {
-    height: 30px;
-    top: 50%;
-}
+    justify-content: center;
 
-.carouselItem {
-    height: 100vh;
-}
+    & .carousel-control-prev, 
+    & .carousel-control-next {
+        height: 30px;
+        top: 50%;
+    }
+    .carouselItem {
+        height: 100vh;
+        
+        &.carouselItem1 {
+            background-image: url(../images/swiper_3.jpg);
+        }
+        
+        &.carouselItem2 {
+            background-image: url(../images/swiper_2.png);
+            background-size: cover;
+        }
+        
+        &.carouselItem3 {
+            background-image: url(../images/swiper_1.jpg);
+        }
+    }
 
-.carouselItem1 {
-    background-image: url(../images/swiper_3.jpg);
+    &__box {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        align-self: center;
+    }
 }
-
-.carouselItem2 {
-    background-image: url(../images/swiper_2.png);
-    background-size: cover;
-}
-
-.carouselItem3 {
-    background-image: url(../images/swiper_1.jpg);
-}
-
-.cntHome__box {
-    position: absolute;
-    top: 35%;
-    left: 25%;
-    align-self: center;
-}
-
-.cntGeneral {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
-}
-
-.title {
-    margin: 80px 0;
-}
-
-.text {
-    font-size: 25px;
-}
-
-.textAlt {
-    line-height: 40px;
-}
-
-.textItalic {
-    font-style: italic;
-    font-weight: bold;
-    color: $colorBeige;
-    font-size: 2em;
-    text-shadow: 2px 2px 10px rgba(27, 16, 31, 0.856);
-    text-align: center;
-}
-
-.textBold {
-    font-weight: bold;
-}
-
-.bg-pattern {
-    background-image: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,.93)), 
-    url(../images/pattern.jpg);
-    background-repeat: repeat;
-}
-
-/* Seccion Nosotros */
-.bgNosotros {
-    display: inline-flex;
-    height: auto;
-    padding: 50px 120px;
-    width: 100%;
-}
-
-.cntImg {
-    display: flex;
-    justify-content: left;
-    width: 50%;
-    gap: 20px;
-}
-
-.img{
-    min-height: 200px;
-    min-width: 150px;
-    max-height: 400px;
-    max-width: 50%;
-}
-
-.img2 {
-    margin-top: 200px;
-}
-
-.cntNosotros{ 
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.cntNosotros-description {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cnt-bttn {
-    width: auto;
-    cursor: pointer;
-}
-
-.bttn {
-    border: 4px solid #41CAD9;
-    background-size: 300% 100%;
-    margin-top: 20px;
-    padding: 12px;
-    text-decoration: none;
-    font-weight: 800;
-    color: #F2A7BB;
-    display: inline-block;
-}
-
-.bttn:hover {
-    background-position: 100% 0;
-    transition: all .4s ease-in-out;
-    color: #514C57;
     
+/* Seccion Nosotros */
+
+.bgNosotros {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 100px;
+    justify-content: space-between;
+
+    &__cntNosotros{ 
+        width: 48%;
+
+        &-description {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .cnt-bttn {
+            width: 255px;
+            height: 56px;
+            cursor: pointer;
+            margin-top: 20px;
+            background-color: $colorWhitePure;
+        }
+        
+        .bttn {
+            border: 4px solid $colorBlueLight;
+            border-radius: 4px;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            color: $colorPink;
+            display: inline-block;
+        }
+        
+        .bttn:hover {
+            background-position: 100% 0;
+            transition: all .4s ease-in-out;
+            color: $colorGray;
+            
+        }
+    }
+    
+    &__cntImg {
+        display: flex;
+        flex-direction: row;
+        width: 48%;
+        justify-content: space-evenly;
+
+        & .item {
+            max-height: 400px;
+        
+            &--alt {
+                margin-top: 200px;
+            }
+        }
+    }
 }
+
+
+
+
