@@ -15,59 +15,46 @@ $medidaMain: 300px;
     
     &__cards {
         display: flex;
-        flex-flow: row;
+        flex-direction: row;
         justify-content: space-around;
         order: inherit;
+        gap: 30px;
+    }
 
-        .box {
-            width: 30%;
-            height: 450px;
+    .card{ 
+        width: 30%;
 
-            &__img {
-                border-radius: 5%;
-                display: flex;
-                width: 100%;
-                height: $medidaMain +30px;
-                background-position: center;
-                background-size: cover;
-            }
-            
-            &__title {
-                width: 100%;
-                background-color:$colorRed;
-                height: 45px;    
-                color: $colorBeige;
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 250px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            &__description {
-                align-content: center;
-                display: flex;
-                justify-content: center;
-                margin: 20px;
-                text-align: center;
-                
-                &:hover {
-                    color: $colorPink;
-                }
-            }
-            
-            .promo1 {
-                background-image: url(../images/promo1.jpg);
-            }
-            
-            .promo2 {    
-                background-image: url(../images/promo2.jpg);
-            }
-            
-            .promo3 {
-                background-image: url(../images/promo3.jpg);
-            }
+        @media (max-width: 767px) {
+            width: 100%;
         }
+    }
+    
+    .bakeryCardTitle {
+        position: absolute;
+        top: 220px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        width: 100%;
+        left: 0;
+        color: $colorWhitePure;
+        background-color: $colorRed;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .bakeryCardText {
+        font-size: 18px;
+    }
+
+    .promo1 {
+        background-image: url(../images/promo1.jpg);
+    }
+    
+    .promo2 {    
+        background-image: url(../images/promo2.jpg);
+    }
+    
+    .promo3 {
+        background-image: url(../images/promo3.jpg);
     }
 }

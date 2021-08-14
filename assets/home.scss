@@ -31,8 +31,53 @@
     &__box {
         position: absolute;
         top: 35%;
-        left: 25%;
+        left: 0;
         align-self: center;
+        width: 100%;
+
+        @media (max-width: 1440px) {
+            top: 20%;
+
+            h1 {
+                font-size: 11em;
+
+                span {
+                    font-size: 1.2em;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            top: 30%;
+
+            h1 {
+                font-size: 9em;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            top: 35%;
+
+            h1 {
+                font-size: 4.5em;
+
+                span {
+                    font-size: 1.2em;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }
     
@@ -44,6 +89,7 @@
     width: 100%;
     padding: 100px;
     justify-content: space-between;
+
 
     &__cntNosotros{ 
         width: 48%;
@@ -59,6 +105,10 @@
             cursor: pointer;
             margin-top: 20px;
             background-color: $colorWhitePure;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
         }
         
         .bttn {
@@ -69,6 +119,11 @@
             font-weight: 800;
             color: $colorPink;
             display: inline-block;
+
+            @media (max-width: 767px) {
+                text-align: center;
+                width: 100%;
+            }
         }
         
         .bttn:hover {
@@ -77,21 +132,96 @@
             color: $colorGray;
             
         }
+
+        @media (max-width: 1440px) {
+            width: 100%;
+        }
+
+    }
+        
+    &__cntGrid {
+        display: grid;
+        grid-template-areas: 
+        "Item1 Item1 Item2 Item3 Item3 Item3"
+        "Item4 Item5 Item5 Item5 Item6 Item6"
+        "Item7 Item7 Item7 Item8 Item6 Item6";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows:  repeat(3, 1fr);
+        width: 48%;
+        border-radius: .25rem;
+        overflow: hidden;
+        box-shadow: 0px 5px 10px $colorGrayTransparent;
+        background-color: $colorWhitePure;
+        padding: 20px;
+
+        &:hover {
+            transform: scale(1.01);
+            transition: all ease .25s;
+        }
+
+        &__item1 {
+            grid-area: Item1;
+            background-image: url(../images/amasando.png);
+            background-size: cover;
+        }
+
+        &__item2 {
+            grid-area: Item2;
+            background-color: #ffecef;
+        }
+        
+        &__item3 {
+            grid-area: Item3;
+            background-image: url(../images/cookie-chips.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        &__item4 {
+            grid-area: Item4;
+            background-color: #d2f4f8;
+        }
+        
+        &__item5 {
+            grid-area: Item5;
+            background-image: url(../images/palo.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        &__item6 {
+            grid-area: Item6;
+            background-image: url(../images/chelsea.jpg);
+            background-size: cover;
+        }
+        
+        &__item7 {
+            grid-area: Item7;
+            background-image: url(../images/love.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        &__item8 {
+            grid-area: Item8;
+            background-color: rgb(255, 255, 198);
+        }
+    
+        @media (max-width: 1440px) {
+            height: 600px;
+            margin-top: 30px;
+            width: 100%;
+        }
+    
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
     
-    &__cntImg {
-        display: flex;
-        flex-direction: row;
-        width: 48%;
-        justify-content: space-evenly;
-
-        & .item {
-            max-height: 400px;
-        
-            &--alt {
-                margin-top: 200px;
-            }
-        }
+    @media (max-width: 1440px) {
+        flex-direction: column;
+        padding: 100px 20px;
+        width: 100%;
     }
 }
 

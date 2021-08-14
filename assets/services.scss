@@ -27,6 +27,7 @@
 .imgBox {
     background-size: cover;
     height: 280px;
+    background-position: center;
 }
 
 .box1 {
@@ -51,4 +52,13 @@
 
 .box6 {
     background-image: url(../images/candyBar.png);
+}
+
+.box7 {
+    background-image: url(../images/bombones.png);
+    background-position: center;
+}
+
+.box8 {
+    background-image: url(../images/pascua.png);
 }
