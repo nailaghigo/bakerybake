@@ -6,6 +6,19 @@
     background-image: url(../images/contactBg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (max-width: 1440px) {
+        background-image: url(../images/contactBg-tablet.jpg);
+        padding-top: 150px !important;
+    }
+
+    @media (max-width: 767px) {
+        background-image: url(../images/contactBg-phone.jpg);
+    }
+
+    @media (max-width: 576px) {
+        background-image: url(../images/contactBg-phone2.jpg);
+    }
 }
 
 .contactCard {
@@ -112,6 +125,18 @@
             }
         }
     } 
+
+    @media (max-width: 1440px) {
+        min-width: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+    
+        &__section {
+            flex-direction: column;
+        }
+    }
 }
 
   
@@ -129,6 +154,14 @@
 
         & .row {
             padding-bottom: 10px;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+
+                .col:first-child {
+                    margin-bottom: 10px;
+                }
+            }
         }
 
         & .form-control,
@@ -157,5 +190,13 @@
             }
         }
         
-    }   
+        @media (max-width: 1440px) {
+            width: 100%;
+        }
+
+    }  
+    
+    @media (max-width: 1440px) {
+        margin-top: 50px;
+    }
 }

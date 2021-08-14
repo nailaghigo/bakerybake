@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    color: $colorGray;
+    color: $colorGrayFont;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     outline: 0;
@@ -11,5 +11,7 @@
 }
 
 body {
-    background-color: $colorWhite;
+    background-image: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,.93)), 
+    url(../images/pattern.jpg);
+    background-repeat: repeat;
 }

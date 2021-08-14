@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Meta-etiquetas -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="pasteleria, tortas, donas, alfajores, galletas, postres, tartas dulces, chocolate, crema, frutas">
+	<meta name="keywords" content="pasteleria, tortas, donas, alfajores, galletas, postres, tartas dulces, chocolate, crema, frutas, harinas, sabores, colores huevos, comida, comida rica, merienda, aroma, calidad, promociones, gourmet">
 	<meta name="description" content="Somos fabricantes de los mejores postres de la ciudad de Rosario. Te acompañamos en todos tus eventos con los mejores sabores y decoraciones. No dudes en contactarnos!">
 	<meta property="og:title" content="Bakery Bake | Pasteleria Gourmet">
 	<meta property="og:url" content="https://bakery-bake.com">
 	<meta property="og:description" content="Somos fabricantes de los mejores postres de la ciudad de Rosario. Te acompañamos en todos tus eventos con los mejores sabores y decoraciones. No dudes en contactarnos!">
+	<!-- Fuentes -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Paytone+One&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/style.css">
+	<!-- Iconos -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Estilos -->
+	<link rel="stylesheet" href="./assets/style.css">
+	<!-- Titulo -->
 	<title>Bakery Bake | Pasteleria Gourmet </title>
 </head>
 
 <body>
+	<!-- Barrra de Navegacion -->
 	<header>
 		<div class="main-nav">
 			<a href="#"><img src="./images/logo.png" class="main-nav__logo" alt="logo"></a>
 
-			<nav class="main-nav__list">
+			<nav class="main-nav__list" id="menu-nav">
+
+				<span class="main-nav__button" id="menu-button">
+					<i class="main-nav__button__icon open fas fa-bars"></i>
+					<i class="main-nav__button__icon close fas fa-times"></i>				
+				</span>
+
 				<ul class="main-nav__item">
 					<li class="main-nav__link"><a class="selected" href="#nosotros">NOSOTROS</a></li>
 					<li class="main-nav__link"><a href="./views/productos.html">PRODUCTOS</a></li>
@@ -36,6 +49,7 @@
 	</header>
 	
 	<section id="home">
+		<!-- Carrousel con Bootstrap -->
 		<div class="cntHome">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -56,6 +70,7 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
+				<!-- Titulo de mi Pagina -->
 				<div class="cntHome__box">
 					<h1>BAKERY <span>Bake</span></h1>
 					<p class="text textItalic">Siendo complices de tus festejos desde 2002</p>
@@ -65,15 +80,12 @@
 	</section>
 
 	<section id="nosotros">
-		<div class="bgNosotros bg-pattern">
-			<div class="bgNosotros__cntImg">
-				<img src="./images/chelsea.jpg" alt="chelsea" class="item ">
-				<img src="./images/making-cupcakes.jpg" alt="making-cupcakes" class="item  item--alt">
-			</div>
+		<!-- Seccion Nosotros -->
+		<div class="bgNosotros">
 			
 			<div class="bgNosotros__cntNosotros">
 				<h2>WE ARE <br> BAKERY BAKE!</h2>
-				 
+				
 				<div class="cntNosotros-description">
 					<div class="text">
 						En Bakery Bake tenemos la convicción de querer hacer los mejores productos del mundo y para eso elegimos los mejores ingredientes, damos especial cuidado a cada paso del proceso y creamos nuevos productos para que nos sigas eligiendo.
@@ -86,22 +98,38 @@
 					<a href="./views/productos.html" class="bttn">Conoce Nuestos Productos</a>
 				</div>	
 			</div>
+			<!-- Grid Seccion Nosotros -->
+			<div class="bgNosotros__cntGrid">
+				<div class="bgNosotros__cntGrid__item1"></div>
+				<div class="bgNosotros__cntGrid__item2"></div>
+				<div class="bgNosotros__cntGrid__item3"></div>
+				<div class="bgNosotros__cntGrid__item4"></div>
+				<div class="bgNosotros__cntGrid__item5"></div>
+				<div class="bgNosotros__cntGrid__item6"></div>
+				<div class="bgNosotros__cntGrid__item7"></div>
+				<div class="bgNosotros__cntGrid__item8"></div>
+			</div>
 		</div>
+		
 	</section>
 	
+	<!-- Footer -->
 	<footer class="cntFooter">
-			<span>© 2021— My Bakery Bake Page</span>
+		<span>© 2021— My Bakery Bake Page</span>
 		<div>
 			<ul class="socialMedia">
-				<li><i class="fab fa-facebook"></i></li>
-				<li><i class="fab fa-whatsapp"></i></li>
-				<li><i class="fab fa-instagram"></i></li>
-				<li><i class="fab fa-twitter-square"></i></li>
+				<li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook iconColor"></i></a></li>
+				<li><a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp iconColor"></i></a></li>
+				<li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram iconColor"></i></a></li>
+				<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square iconColor"></i></a></li>
 			</ul>
 		</div>
 	</footer>
 
+	<!-- JavaScript -->
+	<script src="./assets/app.js"></script>
+	<!-- Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+	
 </body>
 </html>
